@@ -42,7 +42,7 @@ jobs:
     strategy:
       matrix:
         services:
-          [
+        [
             { "appName": "node-service", "directory": "./node-service" },
             { "appName": "python-service", "directory": "./python-service" },
             { "appName": "go-service", "directory": "./go-service" },
@@ -103,7 +103,7 @@ jobs:
         uses: azure/CLI@v1
         with:
           inlineScript: |
-            az group create -g ${{ secrets.RESOURCE_GROUP }} -l canadacentral
+            az group create -g ${{ secrets.RESOURCE_GROUP }} -l switzerlandnorth
             az deployment group create -g ${{ secrets.RESOURCE_GROUP }} -f ./deploy/main.bicep \
              -p \
                 minReplicas=0 \
