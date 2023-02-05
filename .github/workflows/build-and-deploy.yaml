@@ -42,7 +42,7 @@ jobs:
     strategy:
       matrix:
         services:
-        [
+          [
             { "appName": "node-service", "directory": "./node-service" },
             { "appName": "python-service", "directory": "./python-service" },
             { "appName": "go-service", "directory": "./go-service" },
